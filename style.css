@@ -1,0 +1,43 @@
+#wrapper {
+    width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    outline: 3px solid black;
+    font-family: sans-serif;
+    text-align: center;
+}
+#main-board {
+    outline: 3px solid gray;
+    background-color: silver;
+}
+#main-board h1 {
+    margin-top: 0px;
+}
+#main-board ul {
+    text-align: left;
+}
+span {
+    font-weight: bold;
+    color: red;
+}
+#prediction {
+    /* padding: 20px; */
+    font-size: 18px;
+    text-align: left;
+    background-color: black;
+    color: lime;
+}
+.correct {
+    border: 2px solid green;
+}
+.incorrect {
+    border: 2px solid red;
+}
+img {
+    width: 100%;
+}
+.fireworks {
+    background-image: url(https://media.giphy.com/media/IjmMzurYulKEw/giphy.gif);
+    background-size: cover;
+    background-repeat: none;
+}

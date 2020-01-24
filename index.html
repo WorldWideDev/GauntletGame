@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gauntlet</title>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main-board">
+            <img src="images/nescontroller.png" alt="NES Controller">
+            <h1>Level 1 of 3 - jQuery Basics</h1>
+            <ul>
+                <li>Investigate the index.html file.</li>
+                <li>Edit only the script.js file</li>
+                <li><span>Replace the inner HTML</span> of the <code>main-board</code> div with the inner HTML of the <code>gauntlet-2</code> div only when the controller image is clicked. A hint will pop up here in a few minutes if you need it.</li>
+            </ul>
+        </div>
+        <div id="gauntlet-2" hidden>
+            <img src="images/pacman.png" alt="Pacman">
+            <h1>Booyah! - Level 2 of 3 - Predict the output</h1>
+            <pre id="prediction">
+    <code>
+    var characterPosition = {
+        x: 0,
+        y: 0
+    }
+    characterPosition.x--;
+    characterPosition.y += -20;
+
+    function moveCharacter(commandObj){
+        characterPosition.x += commandObj.x;
+        characterPosition.y += commandObj.y;
+    }
+
+    moveCharacter({y:10, x:-5})
+    console.log("x is: ", characterPosition.x, "y is: ",characterPosition.y);
+    </code>
+            </pre>
+            <form action="" id="prediction-input">
+                <label for="input-x">x</label>
+                <input type="number" id="input-x">
+                <label for="input-y">y</label>
+                <input type="number" id="input-y">
+                <input type="submit" value="Check It">
+            </form>
+        </div>
+        <div id="gauntlet-3" hidden>
+            <h1>Primo! - Level 3 of 3 - </h1>
+            <a href="https://repl.it/@ToddEnders/Gauntlet-Algorithm" target="_blank"><h2>Click to go to an Algorithm Challenge!</h2></a>
+            <p>Beat the challenge in the script.js file to get a secret code and input it below. Good luck!</p>
+            <input type="text" id="secret-code">
+            <button id="algo-guess">Enter Secret Code</button>
+        </div>
+        <div id="success" hidden>
+            <h1>Congrats! You Performed This Feat Fearlessly!</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
